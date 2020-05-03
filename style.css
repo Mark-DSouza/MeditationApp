@@ -29,3 +29,8 @@
 .sound-picker {
     background: lightblue;
 }
+
+/* temporarily hiding video */
+video {
+    display: none;
+}
