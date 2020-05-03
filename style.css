@@ -35,7 +35,7 @@
     pointer-events: none;
 }
 
-.time-select {
+/* .time-select {
     background: lightgreen;
 }
 
@@ -45,7 +45,7 @@
 
 .sound-picker {
     background: lightblue;
-}
+} */
 
 .time-display {
     position: absolute;
@@ -54,7 +54,48 @@
     font-size: 50px;
 }
 
-/* temporarily hiding video */
-video {
-    display: none;
+ video {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    z-index: -10;
+}
+
+.time-select button,
+.sound-picker button {
+    color: white;
+    width: 30%;
+    height: 10%;
+    border: 2px solid white;
+    background: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: all .5s ease;
+}
+
+.time-select button:hover {
+    color: black;
+    background: white;
+}
+
+.sound-picker button {
+    border: none;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    padding: 30px;
+}
+
+.sound-picker button:nth-child(1) {
+    background: #4972a1;
+}
+
+.sound-picker button:nth-child(2) {
+    background: #a14f49;
+}
+
+.sound-picker button img {
+    height: 100%;
 }
